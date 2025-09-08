@@ -10,7 +10,7 @@ let fixedMonthlyCosts='2000'
 
 let discountedPrice=basePrice * (1-discountRate)
 let finalPriceWithTax=discountedPrice * (1+salesTaxRate)
-let profitPerUnit=finalPriceWithTax - ostPerUnit
+let profitPerUnit=finalPriceWithTax - costPerUnit
 let breakEvenUnits=Math.ceil(fixedMonthlyCosts / profitPerUnit)
 let isProfitablePerUnit=profitPerUnit > 0;
 
